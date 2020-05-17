@@ -17,7 +17,7 @@ def index():
 
 @app.route('/api/health_check')
 def health_check():
-    return "ok!"
+    return "Ok!"
 
 
 @app.route('/api/get_scores', methods=['POST'])
