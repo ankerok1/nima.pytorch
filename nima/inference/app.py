@@ -1,7 +1,8 @@
 from flask import Flask, redirect, url_for, request, jsonify
 from PIL import Image
-
+import os
 from flasgger import Swagger
+from starlette.responses import JSONResponse, HTMLResponse, RedirectResponse
 
 from nima.inference.inference_model import InferenceModel
 
@@ -75,6 +76,7 @@ def get_scores():
     return jsonify(result)
 
 
-if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port)
+
+if __name__ == '_main__':
+    port1 = int(os.environ.get('PORT', 5000))
+    uvicorn.run(app, host='0.0.0.0', port=port1)
