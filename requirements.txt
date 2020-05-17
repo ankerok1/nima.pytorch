@@ -10,5 +10,5 @@ requests==2.18.4
 flasgger==0.8.1
 tensorflow==1.6.0
 tensorboardX==1.1
-torch
-torchvision
+torch==0.4.0+cpu
+torchvision==0.3.0+cp+cpu
