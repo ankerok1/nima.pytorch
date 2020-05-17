@@ -1,1 +1,1 @@
-web: gunicorn -b 0.0.0.0:$PORT nima.inference.app:app
+web: unicorn nima.inference.app:app --host 0.0.0.0 --port $PORT 
